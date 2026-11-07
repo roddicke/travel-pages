@@ -83,7 +83,7 @@ h1{margin:0;font:600 clamp(24px,5vw,32px)/1.15 var(--font-display);text-wrap:bal
     <h2 id="pName"></h2>
     <div class="role" id="pRole"></div>
     <div class="meta" id="pMeta"></div>
-    <a class="jplink" id="jpLink" href="stamp-japan.html" target="_blank" rel="noopener" hidden>日本スタンプ旅を開く（41都道府県・259スポット）→</a>
+    <a class="jplink" id="jpLink" href="stamp-japan.html" target="_blank" rel="noopener" hidden>日本スタンプ旅を開く（41都道府県・261スポット）→</a>
     <ul class="trips" id="pTrips"></ul>
     <div class="foot"><span class="hint">ドラッグで回転・ズーム、島をタップで記録を表示</span><button class="link" id="tour" type="button">時系列で巡る</button></div>
   </section>
@@ -1415,7 +1415,7 @@ function select(id,fly){
   document.getElementById("pName").innerHTML=`${c.zh} <small>${c.en}</small>`;
   document.getElementById("pRole").textContent=c.role||"";document.getElementById("pRole").hidden=!c.role;
   document.getElementById("pMeta").textContent=c.home?"出発地":`初訪問 ${c.trips[0][0]} · 計 ${c.trips.length} 回`;
-  {const LK={jp:["stamp-japan.html","日本スタンプ旅を開く（41都道府県・259スポット）→"],
+  {const LK={jp:["stamp-japan.html","日本スタンプ旅を開く（41都道府県・261スポット）→"],
     cn:["stamp-china.html","中国スタンプ旅を開く（7省・39スポット）→"],
     au:["stamp-australia.html","オーストラリアスタンプ旅を開く（7州・90スポット）→"],
     hk:["stamp-hongkong.html","香港スタンプ旅を開く（5スポット）→"],
