@@ -83,7 +83,7 @@ h1{margin:0;font:600 clamp(24px,5vw,32px)/1.15 var(--font-display);text-wrap:bal
     <h2 id="pName"></h2>
     <div class="role" id="pRole"></div>
     <div class="meta" id="pMeta"></div>
-    <a class="jplink" id="jpLink" href="stamp-japan.html" target="_blank" rel="noopener" hidden>日本スタンプ旅を開く（41都道府県・254スポット）→</a>
+    <a class="jplink" id="jpLink" href="stamp-japan.html" target="_blank" rel="noopener" hidden>日本スタンプ旅を開く（41都道府県・259スポット）→</a>
     <ul class="trips" id="pTrips"></ul>
     <div class="foot"><span class="hint">ドラッグで回転・ズーム、島をタップで記録を表示</span><button class="link" id="tour" type="button">時系列で巡る</button></div>
   </section>
@@ -1153,7 +1153,7 @@ const C=[
    ["2012.08","東北・四国"],["2013.02","山陰"],["2013.06","大阪"],["2014.01","松山"],["2014.05","岡山"],["2014.08","東北"],
    ["2015.05","高松・高知"],["2015.12","大阪・岡山"],["2016.04","岡山"],["2016.07","大阪・広島"],["2016.10","大阪・岡山"],
    ["2019.01","東京"],["2019.05","東京"],["2019.08","富山"],["2020.01","岡山"],["2023.01","岡山"],["2023.08","岡山"],
-   ["2023.12","東京"],["2024.01","岡山"],["2024.12","岡山"],["2025.08","岡山"],["2025.12","岡山"],["2026.08","岡山"],["2026.11","東京"]]},
+   ["2023.12","東京"],["2024.01","岡山"],["2024.12","岡山"],["2025.08","岡山"],["2025.12","岡山"],["2026.08","岡山"],["2026.11","東京・鎌倉・横須賀"]]},
  {id:"cn",zh:"中国",en:"China",iso:"CHN",cont:"アジア",pos:[-3,-6],s:.85,lm:"pagoda",trips:[["2007.04","北京"],["2011.01","四川"],["2011.11","珠海"],["2012.01","上海"],["2012.03","北京"]]},
  {id:"au",zh:"オーストラリア",en:"Australia",iso:"AUS",cont:"オセアニア",pos:[6,23],s:.9,lm:"sails",trips:[["2008.09","オーストラリア"]]},
  {id:"sg",zh:"シンガポール",en:"Singapore",iso:"SGP",cont:"アジア",pos:[-9,19],s:.7,lm:"bay",trips:[["2011.11","シンガポール"],["2013.05","シンガポール"]]},
@@ -1415,7 +1415,7 @@ function select(id,fly){
   document.getElementById("pName").innerHTML=`${c.zh} <small>${c.en}</small>`;
   document.getElementById("pRole").textContent=c.role||"";document.getElementById("pRole").hidden=!c.role;
   document.getElementById("pMeta").textContent=c.home?"出発地":`初訪問 ${c.trips[0][0]} · 計 ${c.trips.length} 回`;
-  {const LK={jp:["stamp-japan.html","日本スタンプ旅を開く（41都道府県・254スポット）→"],
+  {const LK={jp:["stamp-japan.html","日本スタンプ旅を開く（41都道府県・259スポット）→"],
     cn:["stamp-china.html","中国スタンプ旅を開く（7省・39スポット）→"],
     au:["stamp-australia.html","オーストラリアスタンプ旅を開く（7州・90スポット）→"],
     hk:["stamp-hongkong.html","香港スタンプ旅を開く（5スポット）→"],
